@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/wel_txt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="All the music you want."
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:textFontWeight="500"
+        android:layout_marginTop="80dp"/>
+
+    <TextView
+        android:id="@+id/wel_txt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stream for free."
+        android:layout_below="@+id/wel_txt1"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="27dp"
+        android:textFontWeight="500"/>
+
+    <ImageView
+        android:id="@+id/welcome_logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/logo_welcome"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="200dp"/>
+
+    <Button
+        android:id="@+id/sign_up_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP FOR FREE"
+        android:background="@drawable/button_style"
+        style="@style/ButtonStyle"
+        android:layout_marginHorizontal="30dp"
+        android:textFontWeight="600"
+        android:layout_below="@+id/welcome_logo"
+        android:layout_marginTop="100dp"/>
+
+    <Button
+        android:id="@+id/log_with_google"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONTINUE WITH GOOGLE"
+        android:background="@drawable/button_style2"
+        style="@style/ButtonStyle2"
+        android:layout_marginHorizontal="30dp"
+        android:textFontWeight="400"
+        android:layout_below="@+id/sign_up_btn"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOG IN"
+        android:layout_below="@+id/log_with_google"
+        android:layout_marginHorizontal="30dp"
+        android:textFontWeight="600"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textSize="18dp"
+        android:layout_marginTop="20dp"/>
+
+
+
+</RelativeLayout>

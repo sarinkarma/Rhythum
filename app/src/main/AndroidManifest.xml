@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.musicstreaming">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_android"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_android"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        android:requestLegacyExternalStorage="true">
+        <activity android:name=".activities.ImageUpdateActivity"></activity>
+        <activity android:name=".activities.EditProfileActivity" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-6300812057092644~1081367019" />
+
+        <activity android:name=".activities.GenreActivity" />
+        <activity android:name=".activities.SingleGenreActivity" />
+        <activity android:name=".activities.HitSongActivity" /> <!-- <service android:name=".utils.MediaPlayerService" /> -->
+        <activity android:name=".activities.AlbumActivity" />
+        <activity android:name=".activities.ArtistActivity" />
+        <activity android:name=".activities.SongActivity" />
+        <activity android:name=".activities.SingleArtistActivity" />
+        <activity android:name=".activities.SingleAlbumActivity" />
+        <activity
+            android:name=".activities.DashboardActivity"
+            android:label="@string/title_activity_dashboard"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:name=".activities.LoginActivity" />
+        <activity android:name=".activities.SignUpActivity" />
+        <activity android:name=".activities.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

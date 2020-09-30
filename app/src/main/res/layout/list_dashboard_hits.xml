@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/relativeLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="25dp">
+
+    <ImageView
+        android:id="@+id/song_img"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:src="@drawable/ic_launcher_background"/>
+
+    <TextView
+        android:id="@+id/song_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thinking out loud"
+        android:textColor="@color/grey_white"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/song_img"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:id="@+id/song_artist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blue-eyed soul, Pop"
+        android:textColor="@color/orange"
+        android:textSize="10dp"
+        android:layout_toRightOf="@+id/song_img"
+        android:layout_below="@+id/song_name"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:id="@+id/song_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3:00"
+        android:textColor="@color/grey_white"
+        android:textSize="11dp"
+        android:layout_alignTop="@+id/song_name"
+        android:layout_alignBottom="@+id/song_artist"
+        android:layout_alignParentRight="true"
+        android:gravity="center"/>
+
+</RelativeLayout>
+

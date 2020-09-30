@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#131313">
+
+    <TableLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="#131313"
+        android:padding="15dp">
+
+        <TableRow>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:id="@+id/action_bar_back"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Album Detail"
+                android:textColor="#ffffff"
+                android:gravity="center_horizontal"
+                android:textFontWeight="400"
+                android:padding="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_weight="1"
+                android:layout_marginRight="40dp"
+                />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:scrollIndicators="none"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/background_album">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                app:cardElevation="0dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginHorizontal="20dp"
+                app:cardCornerRadius="6dp"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/album_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/bad_liar"
+                    android:scaleType="centerCrop"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/album_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Album Name"
+                android:textColor="@color/grey_white"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/album_artist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Album by Imagine Dragon"
+                    android:textColor="@color/grey_white"
+                    android:textSize="12dp"
+                    android:textFontWeight="400"
+                    android:gravity="center"/>
+
+                <ImageView
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:src="@drawable/ic_dot"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginHorizontal="5dp"/>
+
+                <TextView
+                    android:id="@+id/album_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2017"
+                    android:textColor="@color/grey_white"
+                    android:textSize="12dp"
+                    android:textFontWeight="400"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Song List"
+                android:textColor="@color/grey_white"
+                android:textSize="17dp"
+                android:textFontWeight="400"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="20dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/song_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="350dp"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:id="@+id/album_copyright"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/grey_white"
+                android:textSize="12dp"
+                android:textFontWeight="500"
+                android:text="\u00A9 \u24C5 2017 Asylum Records UK, a division of Atlantic Records UK, a Warner Music Group company."/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

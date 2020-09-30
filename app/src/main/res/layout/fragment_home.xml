@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#131313"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="#131313">
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:id="@+id/latest_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="30dp"
+                android:text="Latest Albums"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/album_view_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/latest_text"
+                android:layout_alignBottom="@+id/latest_text"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="25dp"
+                android:layout_toRightOf="@+id/latest_text"
+                android:gravity="right|center_vertical"
+                android:text="View more"
+                android:textColor="#ff7657"
+                android:textFontWeight="500"
+                android:drawablePadding="2dp"
+                android:drawableTint="#ff7657"
+                android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/latest_album_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/latest_text"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:clipToPadding="false"/>
+
+            <TextView
+                android:id="@+id/genre_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/latest_album_recycler_view"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="50dp"
+                android:text="Genres"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/genre_view_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/genre_text"
+                android:layout_alignBottom="@+id/genre_text"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="25dp"
+                android:layout_toRightOf="@+id/genre_text"
+                android:gravity="right|center_vertical"
+                android:text="View more"
+                android:textColor="#ff7657"
+                android:textFontWeight="500"
+                android:drawablePadding="2dp"
+                android:drawableTint="#ff7657"
+                android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/genre_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/genre_text"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:clipToPadding="false" />
+
+            <TextView
+                android:id="@+id/hits_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/genre_recycler_view"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="50dp"
+                android:text="International Hits"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/hits_view_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/hits_text"
+                android:layout_alignBottom="@+id/hits_text"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="25dp"
+                android:layout_toRightOf="@+id/hits_text"
+                android:gravity="right|center_vertical"
+                android:text="View more"
+                android:textColor="#ff7657"
+                android:textFontWeight="500"
+                android:drawablePadding="2dp"
+                android:drawableTint="#ff7657"
+                android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/hits_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hits_text"
+                android:layout_marginTop="15dp" />
+
+            <TextView
+                android:id="@+id/author_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hits_recycler_view"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="50dp"
+                android:text="Top Artists"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/artist_view_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/author_text"
+                android:layout_alignBottom="@+id/author_text"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="25dp"
+                android:layout_toRightOf="@+id/author_text"
+                android:gravity="right|center_vertical"
+                android:text="View more"
+                android:textColor="#ff7657"
+                android:textFontWeight="500"
+                android:drawablePadding="2dp"
+                android:drawableTint="#ff7657"
+                android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/artist_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/author_text"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:clipToPadding="false"
+                android:layout_marginBottom="90dp"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

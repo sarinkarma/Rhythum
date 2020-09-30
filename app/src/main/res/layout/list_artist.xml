@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/artist_list"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/artist_image"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/ic_launcher_background"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/artist_name"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="Artist Name"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"/>
+
+</LinearLayout>

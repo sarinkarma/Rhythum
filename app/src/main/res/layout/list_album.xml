@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/album_dashboard"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/album_image"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/album_name"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="Bad liar"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            />
+
+        <LinearLayout
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/album_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017"
+                android:textColor="@color/grey_white"
+                android:textSize="12dp"
+                android:textFontWeight="400"
+                android:gravity="center"/>
+
+            <ImageView
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:src="@drawable/ic_dot"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Album"
+                android:textColor="@color/grey_white"
+                android:textSize="12dp"
+                android:textFontWeight="400"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+</LinearLayout>
